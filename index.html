@@ -1,17 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <title>Фитнес Дашборд</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фитнес Аналитика Астана</title>
     <style>
-        iframe { width: 100%; height: 600px; border: none; margin-bottom: 40px; }
-        h2 { font-family: sans-serif; background: #f4f4f4; padding: 10px; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; color: #333; display: flex; justify-content: center; padding: 40px; }
+        .container { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%; max-width: 500px; }
+        h1 { color: #2c3e50; text-align: center; font-size: 24px; }
+        p { text-align: center; color: #7f8c8d; }
+        .menu-list { list-style: none; padding: 0; margin-top: 25px; }
+        .menu-item { margin-bottom: 15px; }
+        .menu-link { display: block; padding: 15px; background-color: #3498db; color: white; text-decoration: none; text-align: center; border-radius: 8px; transition: background 0.3s ease; font-weight: bold; }
+        .menu-link:hover { background-color: #2980b9; }
     </style>
 </head>
 <body>
-    <h2>1. Таймлайн выхода на рынок</h2>
-    <iframe src="timeline.html"></iframe>
-
-    <h2>2. Рейтинги студий</h2>
-    <iframe src="ratings.html"></iframe>
+    <div class="container">
+        <h1>📊 Fitness Market Dashboard</h1>
+        <p>Выберите отчет для просмотра:</p>
+        <ul class="menu-list">
+            <li class="menu-item"><a href="timeline.html" class="menu-link">📅 Таймлайн рынка</a></li>
+            <li class="menu-item"><a href="ratings.html" class="menu-link">⭐ Анализ рейтингов</a></li>
+            <li class="menu-item"><a href="brand.html" class="menu-link">🏢 Экспансия брендов</a></li>
+        </ul>
+    </div>
 </body>
 </html>
